@@ -1,0 +1,26 @@
+@import "bootstrap";
+
+$background-color: #272B2F;
+​
+// 全体の背景を黒，文字色を白色に変更
+​
+body {
+  background-color: $background-color;
+  color: white;
+}
+​
+// 全体
+​
+.base-container {
+  @extend .container-fluid;
+  max-width: 576px;
+  padding: 2rem;
+}
+​
+// ゲーム内のフォントサイズ
+.game-font {
+  font-size: 1.3rem;
+  @media screen and (max-width: 450px) {
+    font-size: 1rem;
+  }
+}
